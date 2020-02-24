@@ -1,6 +1,6 @@
 # graphbrain-server
 
-*NOTE:* This is highly experimental stuff, only meant for the core team at the moment.
+**NOTE:** This is highly experimental stuff, only meant for the core team at the moment.
 
 ## Installation
 
