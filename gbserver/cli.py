@@ -1,4 +1,5 @@
 import argparse
+import gbserver.server as server
 
 
 def cli():
@@ -17,6 +18,6 @@ def cli():
     print()
 
     if args.command == 'run':
-        pass
+        server.app.run()
     else:
         print('unknown command: {}'.format(args.command))
