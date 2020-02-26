@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 
 
 test_data = {
@@ -794,6 +795,7 @@ test_data = {
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/api/conflicts')
