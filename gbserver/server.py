@@ -1,8 +1,11 @@
+import random
+import copy
 from flask import Flask, jsonify
 from flask_cors import CORS
 
 
 test_data = {
+    "graph": {"layout": "force-directed"},
     "nodes": [
         {
             "id": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
@@ -798,6 +801,16 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/api/conflicts')
-def hello():
+@app.route('/api/conflicts1')
+def conflicts1():
     return jsonify(test_data)
+
+
+@app.route('/api/conflicts2')
+def conflicts2():
+    data = copy.deepcopy(test_data)
+    data['graph']['layout'] = 'predefined'
+    for node in data['nodes']:
+        node['x'] = random.random()
+        node['y'] = random.random()
+    return jsonify(data)
