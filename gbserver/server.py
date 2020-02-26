@@ -154,7 +154,7 @@ test_data = {
     ],
     "links": [
         {
-            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "source": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
             "target": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -162,7 +162,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "source": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
             "target": "clinton/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -170,7 +170,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "source": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
             "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -178,7 +178,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "source": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -186,7 +186,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "source": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -194,7 +194,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "source": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -202,7 +202,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "source": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "target": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -210,7 +210,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "source": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -218,7 +218,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "source": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -226,7 +226,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "source": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -234,7 +234,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "source": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -242,7 +242,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "source": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -250,7 +250,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
+            "source": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -258,7 +258,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
+            "source": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -266,7 +266,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
+            "source": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -274,7 +274,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
+            "source": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -282,7 +282,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
+            "source": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -290,7 +290,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "source": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
             "target": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -298,7 +298,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "source": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
             "target": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -306,7 +306,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "source": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -314,7 +314,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
+            "source": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -322,7 +322,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
+            "source": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
             "target": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -330,7 +330,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
+            "source": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
             "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -338,7 +338,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "source": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -346,7 +346,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "source": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -354,7 +354,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "source": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -362,7 +362,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "source": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -370,7 +370,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "biden/cp.s/en",
+            "source": "biden/cp.s/en",
             "target": "clinton/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -378,7 +378,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "biden/cp.s/en",
+            "source": "biden/cp.s/en",
             "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -386,7 +386,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "biden/cp.s/en",
+            "source": "biden/cp.s/en",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -394,7 +394,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "boehner/cp.s/en",
+            "source": "boehner/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -402,7 +402,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "boehner/cp.s/en",
+            "source": "boehner/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -410,7 +410,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "christie/cp.s/en",
+            "source": "christie/cp.s/en",
             "target": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -418,7 +418,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "christie/cp.s/en",
+            "source": "christie/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -426,7 +426,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "clinton/cp.s/en",
+            "source": "clinton/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -434,7 +434,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "clinton/cp.s/en",
+            "source": "clinton/cp.s/en",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -442,7 +442,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "clinton/cp.s/en",
+            "source": "clinton/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -450,7 +450,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "clinton/cp.s/en",
+            "source": "clinton/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -458,7 +458,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "clinton/cp.s/en",
+            "source": "clinton/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -466,7 +466,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "democrats/cp.p/en",
+            "source": "democrats/cp.p/en",
             "target": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -474,7 +474,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "democrats/cp.p/en",
+            "source": "democrats/cp.p/en",
             "target": "rubio/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -482,7 +482,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "democrats/cp.p/en",
+            "source": "democrats/cp.p/en",
             "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -490,7 +490,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "gop/cp.s/en",
+            "source": "gop/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -498,7 +498,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "gop/cp.s/en",
+            "source": "gop/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -506,7 +506,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "mccain/cp.s/en",
+            "source": "mccain/cp.s/en",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -514,7 +514,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "mccain/cp.s/en",
+            "source": "mccain/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -522,7 +522,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "mccain/cp.s/en",
+            "source": "mccain/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -530,7 +530,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "mcconnell/cp.s/en",
+            "source": "mcconnell/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -538,7 +538,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "mcconnell/cp.s/en",
+            "source": "mcconnell/cp.s/en",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -546,7 +546,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "mcconnell/cp.s/en",
+            "source": "mcconnell/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -554,7 +554,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -562,7 +562,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -570,7 +570,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "boehner/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -578,7 +578,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -586,7 +586,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -594,7 +594,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -602,7 +602,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -610,7 +610,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -618,7 +618,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -626,7 +626,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -634,7 +634,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "obama/cp.s/en",
+            "source": "obama/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -642,7 +642,7 @@ test_data = {
             "label": "üddeutsche Zeitung"
         },
         {
-            "origin": "republicans/cp.p/en",
+            "source": "republicans/cp.p/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -650,7 +650,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "republicans/cp.p/en",
+            "source": "republicans/cp.p/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -658,7 +658,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "rubio/cp.s/en",
+            "source": "rubio/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -666,7 +666,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "rubio/cp.s/en",
+            "source": "rubio/cp.s/en",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -674,7 +674,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "rubio/cp.s/en",
+            "source": "rubio/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -682,7 +682,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "russia/cp.s/en",
+            "source": "russia/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -690,7 +690,7 @@ test_data = {
             "label": "The Guardian"
         },
         {
-            "origin": "russia/cp.s/en",
+            "source": "russia/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -698,7 +698,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "russia/cp.s/en",
+            "source": "russia/cp.s/en",
             "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -706,7 +706,7 @@ test_data = {
             "label": "New York Times"
         },
         {
-            "origin": "russia/cp.s/en",
+            "source": "russia/cp.s/en",
             "target": "u_s_/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -714,7 +714,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "spicer/cp.s/en",
+            "source": "spicer/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -722,7 +722,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
             "type": "conflict",
             "directed": True,
@@ -730,7 +730,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "clinton/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -738,7 +738,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -746,7 +746,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -754,7 +754,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "mccain/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -762,7 +762,7 @@ test_data = {
             "label": "Süddeutsche Zeitung"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -770,7 +770,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
@@ -778,7 +778,7 @@ test_data = {
             "label": "Le Monde"
         },
         {
-            "origin": "trump/cp.s/en",
+            "source": "trump/cp.s/en",
             "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
@@ -786,7 +786,7 @@ test_data = {
             "label": "Washington Post"
         },
         {
-            "origin": "u_s_/cp.s/en",
+            "source": "u_s_/cp.s/en",
             "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
