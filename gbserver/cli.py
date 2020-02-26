@@ -18,6 +18,6 @@ def cli():
     print()
 
     if args.command == 'run':
-        server.app.run()
+        server.app.run(host='localhost', port=5000)
     else:
         print('unknown command: {}'.format(args.command))
