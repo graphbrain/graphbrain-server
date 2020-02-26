@@ -154,640 +154,640 @@ test_data = {
     ],
     "links": [
         {
-            "orig": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
-            "targ": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
+            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "target": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
-            "targ": "clinton/cp.s/en",
+            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "target": "clinton/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
-            "targ": "democrats/cp.p/en",
+            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
-            "targ": "gop/cp.s/en",
+            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
-            "targ": "trump/cp.s/en",
+            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "Le Monde"
         },
         {
-            "orig": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
-            "targ": "trump/cp.s/en",
+            "origin": "(+/b.am/. bernie/cp.s/en sanders/cp.s/en)",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
-            "targ": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "target": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
-            "targ": "democrats/cp.p/en",
+            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
-            "targ": "gop/cp.s/en",
+            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "New York Times"
         },
         {
-            "orig": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
-            "targ": "obama/cp.s/en",
+            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Washington Post"
         },
         {
-            "orig": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
-            "targ": "republicans/cp.p/en",
+            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
-            "targ": "trump/cp.s/en",
+            "origin": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
-            "targ": "obama/cp.s/en",
+            "origin": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Washington Post"
         },
         {
-            "orig": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
-            "targ": "trump/cp.s/en",
+            "origin": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Washington Post"
         },
         {
-            "orig": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
-            "targ": "republicans/cp.p/en",
+            "origin": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
-            "targ": "obama/cp.s/en",
+            "origin": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
-            "targ": "republicans/cp.p/en",
+            "origin": "(+/b.am/. president/cp.s/en trump/cp.s/en)",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
-            "targ": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
+            "origin": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "target": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
-            "targ": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
+            "origin": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "target": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
-            "targ": "gop/cp.s/en",
+            "origin": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
-            "targ": "obama/cp.s/en",
+            "origin": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
-            "targ": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
+            "origin": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
+            "target": "(+/b.am/. president/cp.s/en obama/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
-            "targ": "democrats/cp.p/en",
+            "origin": "(+/b.am/. ted/cp.s/en cruz/cp.s/en)",
+            "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Le Monde"
         },
         {
-            "orig": "(+/b.am/. white/cp.s/en house/cp.s/en)",
-            "targ": "gop/cp.s/en",
+            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "The Guardian"
         },
         {
-            "orig": "(+/b.am/. white/cp.s/en house/cp.s/en)",
-            "targ": "obama/cp.s/en",
+            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Washington Post"
         },
         {
-            "orig": "(+/b.am/. white/cp.s/en house/cp.s/en)",
-            "targ": "republicans/cp.p/en",
+            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "(+/b.am/. white/cp.s/en house/cp.s/en)",
-            "targ": "russia/cp.s/en",
+            "origin": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Washington Post"
         },
         {
-            "orig": "biden/cp.s/en",
-            "targ": "clinton/cp.s/en",
+            "origin": "biden/cp.s/en",
+            "target": "clinton/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "biden/cp.s/en",
-            "targ": "democrats/cp.p/en",
+            "origin": "biden/cp.s/en",
+            "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "biden/cp.s/en",
-            "targ": "gop/cp.s/en",
+            "origin": "biden/cp.s/en",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "boehner/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "boehner/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 5,
             "label": "New York Times"
         },
         {
-            "orig": "boehner/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "boehner/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "Washington Post"
         },
         {
-            "orig": "christie/cp.s/en",
-            "targ": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
+            "origin": "christie/cp.s/en",
+            "target": "(+/b.am/. rand/cp.s/en paul/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "christie/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "christie/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "New York Times"
         },
         {
-            "orig": "clinton/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "clinton/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "New York Times"
         },
         {
-            "orig": "clinton/cp.s/en",
-            "targ": "republicans/cp.p/en",
+            "origin": "clinton/cp.s/en",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "clinton/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "clinton/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 10,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "clinton/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "clinton/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 5,
             "label": "New York Times"
         },
         {
-            "orig": "clinton/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "clinton/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "Washington Post"
         },
         {
-            "orig": "democrats/cp.p/en",
-            "targ": "(+/b.am/. white/cp.s/en house/cp.s/en)",
+            "origin": "democrats/cp.p/en",
+            "target": "(+/b.am/. white/cp.s/en house/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "democrats/cp.p/en",
-            "targ": "rubio/cp.s/en",
+            "origin": "democrats/cp.p/en",
+            "target": "rubio/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "democrats/cp.p/en",
-            "targ": "russia/cp.s/en",
+            "origin": "democrats/cp.p/en",
+            "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Washington Post"
         },
         {
-            "orig": "gop/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "gop/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "The Guardian"
         },
         {
-            "orig": "gop/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "gop/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "mccain/cp.s/en",
-            "targ": "gop/cp.s/en",
+            "origin": "mccain/cp.s/en",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "mccain/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "mccain/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 8,
             "label": "Le Monde"
         },
         {
-            "orig": "mccain/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "mccain/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 6,
             "label": "New York Times"
         },
         {
-            "orig": "mcconnell/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "mcconnell/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 4,
             "label": "Le Monde"
         },
         {
-            "orig": "mcconnell/cp.s/en",
-            "targ": "republicans/cp.p/en",
+            "origin": "mcconnell/cp.s/en",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "mcconnell/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "mcconnell/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
+            "origin": "obama/cp.s/en",
+            "target": "(+/b.am/. elizabeth/cp.s/en warren/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
+            "origin": "obama/cp.s/en",
+            "target": "(+/b.am/. scott/cp.s/en walker/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "New York Times"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "boehner/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "boehner/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Washington Post"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "democrats/cp.p/en",
+            "origin": "obama/cp.s/en",
+            "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "New York Times"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "gop/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 6,
             "label": "New York Times"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "republicans/cp.p/en",
+            "origin": "obama/cp.s/en",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 5,
             "label": "The Guardian"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "russia/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 20,
             "label": "New York Times"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 12,
             "label": "Washington Post"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 8,
             "label": "The Guardian"
         },
         {
-            "orig": "obama/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "obama/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "üddeutsche Zeitung"
         },
         {
-            "orig": "republicans/cp.p/en",
-            "targ": "obama/cp.s/en",
+            "origin": "republicans/cp.p/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 12,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "republicans/cp.p/en",
-            "targ": "trump/cp.s/en",
+            "origin": "republicans/cp.p/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "rubio/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "rubio/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "rubio/cp.s/en",
-            "targ": "republicans/cp.p/en",
+            "origin": "rubio/cp.s/en",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "rubio/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "rubio/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "russia/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "russia/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "The Guardian"
         },
         {
-            "orig": "russia/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "russia/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "russia/cp.s/en",
-            "targ": "trump/cp.s/en",
+            "origin": "russia/cp.s/en",
+            "target": "trump/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "New York Times"
         },
         {
-            "orig": "russia/cp.s/en",
-            "targ": "u_s_/cp.s/en",
+            "origin": "russia/cp.s/en",
+            "target": "u_s_/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 3,
             "label": "Le Monde"
         },
         {
-            "orig": "spicer/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "spicer/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
+            "origin": "trump/cp.s/en",
+            "target": "(+/b.am/. jeb/cp.s/en bush/cp.s/en)",
             "type": "conflict",
             "directed": True,
             "weight": 1,
             "label": "Le Monde"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "clinton/cp.s/en",
+            "origin": "trump/cp.s/en",
+            "target": "clinton/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 15,
             "label": "Le Monde"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "democrats/cp.p/en",
+            "origin": "trump/cp.s/en",
+            "target": "democrats/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 12,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "gop/cp.s/en",
+            "origin": "trump/cp.s/en",
+            "target": "gop/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 6,
             "label": "Le Monde"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "mccain/cp.s/en",
+            "origin": "trump/cp.s/en",
+            "target": "mccain/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 4,
             "label": "Süddeutsche Zeitung"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "obama/cp.s/en",
+            "origin": "trump/cp.s/en",
+            "target": "obama/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 38,
             "label": "Le Monde"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "republicans/cp.p/en",
+            "origin": "trump/cp.s/en",
+            "target": "republicans/cp.p/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Le Monde"
         },
         {
-            "orig": "trump/cp.s/en",
-            "targ": "russia/cp.s/en",
+            "origin": "trump/cp.s/en",
+            "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 2,
             "label": "Washington Post"
         },
         {
-            "orig": "u_s_/cp.s/en",
-            "targ": "russia/cp.s/en",
+            "origin": "u_s_/cp.s/en",
+            "target": "russia/cp.s/en",
             "type": "conflict",
             "directed": True,
             "weight": 1,
