@@ -49,6 +49,11 @@ Then to switch to the virtual environment and install graphbrain-server:
     $ source venv/bin/activate
     $ pip install .
 
+### Troubleshooting
+
+plyvel installation issues on macOS where solved using this command:
+
+    $ pip install --global-option=build_ext --global-option="-I/usr/local/include" --global-option="-L/usr/local/lib" plyvel
 
 ## Running a server
 
