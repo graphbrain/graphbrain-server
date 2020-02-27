@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 
 test_data = {
-    "viz-blocks": [{
+    "viz_blocks": [{
         "type": "graph",
         "layout": "force-directed",
         "nodes": [
