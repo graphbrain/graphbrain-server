@@ -5,7 +5,8 @@ from flask_cors import CORS
 
 
 test_data = {
-    "graph": {
+    "viz-blocks": [{
+        "type": "graph",
         "layout": "force-directed",
         "nodes": [
             {
@@ -795,7 +796,7 @@ test_data = {
                 "label": "Washington Post"
             }
         ]
-    }
+    }]
 }
 
 
@@ -811,8 +812,8 @@ def conflicts1():
 @app.route('/api/conflicts2')
 def conflicts2():
     data = copy.deepcopy(test_data)
-    data['graph']['layout'] = 'predefined'
-    for node in data['nodes']:
+    data['viz-blocks'][0]['layout'] = 'predefined'
+    for node in data['viz-blocks'][0]['nodes']:
         node['x'] = random.random()
         node['y'] = random.random()
     return jsonify(data)
