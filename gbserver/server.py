@@ -811,6 +811,7 @@ def conflicts1():
 
 @app.route('/api/conflicts2')
 def conflicts2():
+    random.seed(36)
     data = copy.deepcopy(test_data)
     data['viz_blocks'][0]['layout'] = 'predefined'
     for node in data['viz_blocks'][0]['nodes']:
