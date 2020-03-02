@@ -48,12 +48,12 @@ def conflicts_all():
                     'weight': weight,
                     'label': ''}
             graph['links'].append(link)
-        for actor, weight in actors.most_common():
-            node = {'id': actor.to_str(),
-                    'label': actor.label(),
-                    'faction': 0,
-                    'weight': weight}
-            graph['nodes'].append(node)
+    for actor, weight in actors.most_common():
+        node = {'id': actor.to_str(),
+                'label': actor.label(),
+                'faction': 0,
+                'weight': weight}
+        graph['nodes'].append(node)
     return jsonify(data)
 
 
