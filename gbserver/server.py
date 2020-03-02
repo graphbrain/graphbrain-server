@@ -4,12 +4,27 @@ from collections import Counter
 from flask import Flask, jsonify, current_app
 from flask_cors import CORS
 from graphbrain import *
-from gbserver.conflicts import conflicts
+from gbserver.conflicts import conflicts, conflict_topics
 from gbserver.test_data import test_data
 
 
 app = Flask(__name__)
 CORS(app)
+
+
+@app.route('/api/conflicts/topics')
+def conflicts_topics():
+    hg = hgraph(current_app.config['HG'])
+    table = {'type': 'table',
+             'columns': ['id', 'label', 'weight'],
+             'rows': []}
+    data = {'viz_blocks': [table]}
+    for topic, weight in conflict_topics(hg).most_common():
+        row = {'id': topic.to_str(),
+               'label': topic.label(),
+               'weight': weight}
+        table['rows'].append(row)
+    return jsonify(data)
 
 
 @app.route('/api/conflicts/all')
