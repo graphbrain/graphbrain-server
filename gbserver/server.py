@@ -1,7 +1,10 @@
 import random
 import copy
+from collections import Counter
 from flask import Flask, jsonify, current_app
 from flask_cors import CORS
+from graphbrain import *
+from gbserver.conflicts import conflicts
 from gbserver.test_data import test_data
 
 
@@ -9,9 +12,37 @@ app = Flask(__name__)
 CORS(app)
 
 
+@app.route('/api/conflicts/all')
+def conflicts_all():
+    hg = hgraph(current_app.config['HG'])
+    graph = {'type': 'graph',
+             'layout': 'force-directed',
+             'nodes': [],
+             'links': []}
+    data = {'viz_blocks': [graph]}
+    actors = Counter()
+    for conflict, weight in conflicts(hg).most_common():
+        actor1, actor2 = conflict
+        actors[actor1] += 1
+        actors[actor2] += 1
+        link = {'source': actor1.to_str(),
+                'target': actor2.to_str(),
+                'type': 'conflict',
+                'directed': True,
+                'weight': weight,
+                'label': ''}
+        graph['links'].append(link)
+    for actor, weight in actors.most_common():
+        node = {'id': actor.to_str(),
+                'label': actor.label(),
+                'faction': 0,
+                'weight': weight}
+        graph['nodes'].append(node)
+    return jsonify(data)
+
+
 @app.route('/api/conflicts1')
 def conflicts1():
-    print(current_app.config['HG'])
     return jsonify(test_data)
 
 
