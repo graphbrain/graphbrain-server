@@ -1,6 +1,6 @@
 import random
 import copy
-from flask import Flask, jsonify
+from flask import Flask, jsonify, current_app
 from flask_cors import CORS
 
 
@@ -806,6 +806,7 @@ CORS(app)
 
 @app.route('/api/conflicts1')
 def conflicts1():
+    print(current_app.config['HG'])
     return jsonify(test_data)
 
 

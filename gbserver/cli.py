@@ -2,6 +2,9 @@ import argparse
 import gbserver.server as server
 
 
+HG = None
+
+
 def cli():
     parser = argparse.ArgumentParser()
 
@@ -12,12 +15,14 @@ def cli():
     args = parser.parse_args()
 
     print('command: {}'.format(args.command))
-    if args.hg:
-        print('hypergraph: {}'.format(args.hg))
+    global HG
+    HG = args.hg
+    print('hypergraph: {}'.format(HG))
 
     print()
 
     if args.command == 'run':
+        server.app.config.from_object(__name__)
         server.app.run(host='localhost', port=5000)
     else:
         print('unknown command: {}'.format(args.command))
