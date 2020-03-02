@@ -1,10 +1,11 @@
 import random
 import copy
 from collections import Counter
-from flask import Flask, jsonify, current_app
+import urllib.parse
+from flask import Flask, jsonify, current_app, request
 from flask_cors import CORS
 from graphbrain import *
-from gbserver.conflicts import conflicts, conflict_topics
+from gbserver.conflicts import conflicts, conflict_topics, conflicts_by_topic
 from gbserver.test_data import test_data
 
 
@@ -16,13 +17,16 @@ CORS(app)
 def conflicts_topics():
     hg = hgraph(current_app.config['HG'])
     table = {'type': 'table',
-             'columns': ['id', 'label', 'weight'],
+             'columns': ['id', 'label', 'weight', 'url'],
              'rows': []}
     data = {'viz_blocks': [table]}
     for topic, weight in conflict_topics(hg).most_common():
+        url = '/api/conflicts/topic?topic={}'.format(
+            urllib.parse.quote_plus(topic.to_str()))
         row = {'id': topic.to_str(),
                'label': topic.label(),
-               'weight': weight}
+               'weight': weight,
+               'url': url}
         table['rows'].append(row)
     return jsonify(data)
 
@@ -48,6 +52,38 @@ def conflicts_all():
                     'weight': weight,
                     'label': ''}
             graph['links'].append(link)
+    for actor, weight in actors.most_common():
+        node = {'id': actor.to_str(),
+                'label': actor.label(),
+                'faction': 0,
+                'weight': weight}
+        graph['nodes'].append(node)
+    return jsonify(data)
+
+
+@app.route('/api/conflicts/topic')
+def conflicts_topic():
+    topic = hedge(request.args.get('topic'))
+
+    graph = {'type': 'graph',
+             'layout': 'force-directed',
+             'nodes': [],
+             'links': []}
+    data = {'viz_blocks': [graph]}
+    actors = Counter()
+
+    hg = hgraph(current_app.config['HG'])
+    for conflict, weight in conflicts_by_topic(hg, topic).most_common():
+        actor1, actor2 = conflict
+        actors[actor1] += 1
+        actors[actor2] += 1
+        link = {'source': actor1.to_str(),
+                'target': actor2.to_str(),
+                'type': 'conflict',
+                'directed': True,
+                'weight': weight,
+                'label': ''}
+        graph['links'].append(link)
     for actor, weight in actors.most_common():
         node = {'id': actor.to_str(),
                 'label': actor.label(),
