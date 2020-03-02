@@ -37,22 +37,23 @@ def conflicts_all():
     data = {'viz_blocks': [graph]}
     actors = Counter()
     for conflict, weight in conflicts(hg).most_common():
-        actor1, actor2 = conflict
-        actors[actor1] += 1
-        actors[actor2] += 1
-        link = {'source': actor1.to_str(),
-                'target': actor2.to_str(),
-                'type': 'conflict',
-                'directed': True,
-                'weight': weight,
-                'label': ''}
-        graph['links'].append(link)
-    for actor, weight in actors.most_common():
-        node = {'id': actor.to_str(),
-                'label': actor.label(),
-                'faction': 0,
-                'weight': weight}
-        graph['nodes'].append(node)
+        if weight > 2:
+            actor1, actor2 = conflict
+            actors[actor1] += 1
+            actors[actor2] += 1
+            link = {'source': actor1.to_str(),
+                    'target': actor2.to_str(),
+                    'type': 'conflict',
+                    'directed': True,
+                    'weight': weight,
+                    'label': ''}
+            graph['links'].append(link)
+        for actor, weight in actors.most_common():
+            node = {'id': actor.to_str(),
+                    'label': actor.label(),
+                    'faction': 0,
+                    'weight': weight}
+            graph['nodes'].append(node)
     return jsonify(data)
 
 
