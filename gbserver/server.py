@@ -21,8 +21,8 @@ def conflicts_topics():
              'rows': []}
     data = {'viz_blocks': [table]}
     for topic, weight in conflict_topics(hg).most_common():
-        url = '/api/conflicts/topic?topic={}'.format(
-            urllib.parse.quote_plus(topic.to_str()))
+        url = '/api/conflicts/topic?{}'.format(
+            urllib.parse.urlencode({'topic': topic.to_str()}))
         row = {'id': topic.to_str(),
                'label': topic.label(),
                'weight': weight,
