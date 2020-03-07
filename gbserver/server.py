@@ -28,7 +28,7 @@ def conflicts_topics():
                'weight': weight,
                'url': url}
         table['rows'].append(row)
-    print(jsonify(data))
+    print(data)
     return jsonify(data)
 
 
