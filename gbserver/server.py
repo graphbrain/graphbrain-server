@@ -15,6 +15,7 @@ CORS(app)
 
 @app.route('/api/conflicts/topics')
 def conflicts_topics():
+    print('/api/conflicts/topics')
     hg = hgraph(current_app.config['HG'])
     table = {'type': 'table',
              'columns': ['id', 'label', 'weight', 'url'],
@@ -28,12 +29,12 @@ def conflicts_topics():
                'weight': weight,
                'url': url}
         table['rows'].append(row)
-    print(data)
     return jsonify(data)
 
 
 @app.route('/api/conflicts/all')
 def conflicts_all():
+    print('/api/conflicts/all')
     hg = hgraph(current_app.config['HG'])
     graph = {'type': 'graph',
              'layout': 'force-directed',
@@ -64,6 +65,7 @@ def conflicts_all():
 
 @app.route('/api/conflicts/topic')
 def conflicts_topic():
+    print('/api/conflicts/topic')
     topic = hedge(request.args.get('topic'))
 
     graph = {'type': 'graph',
