@@ -6,6 +6,7 @@ from flask import Flask, jsonify, current_app, request
 from flask_cors import CORS
 from graphbrain import *
 from gbserver.conflicts import conflicts, conflict_topics, conflicts_by_topic
+from gbserver.factions import Factions
 from gbserver.test_data import test_data
 
 
@@ -73,7 +74,9 @@ def conflicts_topic():
     actors = Counter()
 
     hg = hgraph(current_app.config['HG'])
+    conflict_pairs = []
     for conflict, weight in conflicts_by_topic(hg, topic).most_common():
+        conflict_pairs.append(conflict)
         actor1, actor2 = conflict
         actors[actor1] += 1
         actors[actor2] += 1
@@ -84,11 +87,15 @@ def conflicts_topic():
                 'weight': weight,
                 'label': ''}
         graph['links'].append(link)
+
+    factions = Factions(conflict_pairs)
+
     for actor, weight in actors.most_common():
         node = {'id': actor.to_str(),
                 'label': actor.label(),
                 'faction': 0,
-                'weight': weight}
+                'weight': weight,
+                'faction': factions.faction(actor)}
         graph['nodes'].append(node)
     return jsonify(data)
 
