@@ -3,6 +3,7 @@ import urllib.parse
 from flask import Flask, jsonify, current_app, request
 from flask_cors import CORS
 from graphbrain import *
+from gbserver.actors import actor_info
 from gbserver.conflicts import conflict_topics, conflicts_by_topic
 from gbserver.factions import Factions
 
@@ -83,6 +84,7 @@ def conflicts_topic():
                 'label': actor.label(),
                 'faction': 0,
                 'weight': weight,
-                'faction': factions.faction(actor)}
+                'faction': factions.faction(actor),
+                'info': actor_info(hg, actor)}
         graph['nodes'].append(node)
     return jsonify(data)
