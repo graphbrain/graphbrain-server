@@ -1,17 +1,19 @@
-import random
-import copy
 from collections import Counter
 import urllib.parse
 from flask import Flask, jsonify, current_app, request
 from flask_cors import CORS
 from graphbrain import *
-from gbserver.conflicts import conflicts, conflict_topics, conflicts_by_topic
+from gbserver.conflicts import conflict_topics, conflicts_by_topic
 from gbserver.factions import Factions
-from gbserver.test_data import test_data
 
 
 app = Flask(__name__)
 CORS(app)
+
+
+def topic_url(topic):
+    return '/api/conflicts/topic?{}'.format(
+        urllib.parse.urlencode({'topic': topic.to_str()}))
 
 
 @app.route('/api/conflicts/topics')
@@ -22,43 +24,12 @@ def conflicts_topics():
              'rows': []}
     data = {'viz_blocks': [table]}
     for topic, weight in conflict_topics(hg).most_common():
-        url = '/api/conflicts/topic?{}'.format(
-            urllib.parse.urlencode({'topic': topic.to_str()}))
+        url = topic_url(topic),
         row = {'id': topic.to_str(),
                'label': topic.label(),
                'weight': weight,
                'url': url}
         table['rows'].append(row)
-    return jsonify(data)
-
-
-@app.route('/api/conflicts/all')
-def conflicts_all():
-    hg = hgraph(current_app.config['HG'])
-    graph = {'type': 'graph',
-             'layout': 'force-directed',
-             'nodes': [],
-             'links': []}
-    data = {'viz_blocks': [graph]}
-    actors = Counter()
-    for conflict, weight in conflicts(hg).most_common():
-        if weight > 2:
-            actor1, actor2 = conflict
-            actors[actor1] += 1
-            actors[actor2] += 1
-            link = {'source': actor1.to_str(),
-                    'target': actor2.to_str(),
-                    'type': 'conflict',
-                    'directed': True,
-                    'weight': weight,
-                    'label': ''}
-            graph['links'].append(link)
-    for actor, weight in actors.most_common():
-        node = {'id': actor.to_str(),
-                'label': actor.label(),
-                'faction': 0,
-                'weight': weight}
-        graph['nodes'].append(node)
     return jsonify(data)
 
 
@@ -75,17 +46,34 @@ def conflicts_topic():
 
     hg = hgraph(current_app.config['HG'])
     conflict_pairs = []
-    for conflict, weight in conflicts_by_topic(hg, topic).most_common():
+    conflicts = conflicts_by_topic(hg, topic)
+    for conflict in conflicts:
         conflict_pairs.append(conflict)
         actor1, actor2 = conflict
         actors[actor1] += 1
         actors[actor2] += 1
+        conflicts_data = conflicts[conflict]
+        weight = len(conflicts_data)
+        headlines = [conflict_data['text'] for conflict_data in conflicts_data
+                     if conflict_data['text'] is not None]
+        other_topics = set()
+        for conflict_data in conflicts_data:
+            for topic in conflict_data['other_topics']:
+                other_topics.add(topic)
+
+        other_topics = [{'label': t.to_str(),
+                         'url': topic_url(t)} for t in other_topics]
+
+        info = {'headlines': headlines,
+                'other_topics': list(other_topics)}
+
         link = {'source': actor1.to_str(),
                 'target': actor2.to_str(),
                 'type': 'conflict',
                 'directed': True,
                 'weight': weight,
-                'label': ''}
+                'label': '',
+                'info': info}
         graph['links'].append(link)
 
     factions = Factions(conflict_pairs)
@@ -97,20 +85,4 @@ def conflicts_topic():
                 'weight': weight,
                 'faction': factions.faction(actor)}
         graph['nodes'].append(node)
-    return jsonify(data)
-
-
-@app.route('/api/conflicts1')
-def conflicts1():
-    return jsonify(test_data)
-
-
-@app.route('/api/conflicts2')
-def conflicts2():
-    random.seed(36)
-    data = copy.deepcopy(test_data)
-    data['viz_blocks'][0]['layout'] = 'predefined'
-    for node in data['viz_blocks'][0]['nodes']:
-        node['x'] = random.random()
-        node['y'] = random.random()
     return jsonify(data)

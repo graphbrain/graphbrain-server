@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import Counter, defaultdict
 from graphbrain.meaning.corefs import main_coref
 from graphbrain.meaning.concepts import all_concepts, has_proper_concept
 
@@ -50,19 +50,8 @@ def conflict_topics(hg):
     return all_topics
 
 
-def conflicts(hg):
-    conflicts = Counter()
-
-    for conflict_edge in hg.search('(conflict/p/. * * *)'):
-        actor1 = main_coref(hg, conflict_edge[1])
-        actor2 = main_coref(hg, conflict_edge[2])
-        if is_valid(hg, actor1) and is_valid(hg, actor2):
-            conflicts[(actor1, actor2)] += 1
-    return conflicts
-
-
 def conflicts_by_topic(hg, topic):
-    conflicts = Counter()
+    conflicts = defaultdict(list)
 
     for conflict_edge in hg.search('(conflict/p/. * * *)'):
         actor1 = main_coref(hg, conflict_edge[1])
@@ -75,5 +64,13 @@ def conflicts_by_topic(hg, topic):
                         topics = list(main_coref(hg, concept)
                                       for concept in all_concepts(item[1]))
                         if topic in topics:
-                            conflicts[(actor1, actor2)] += 1
+                            all_topics = conflict_topics(hg)
+                            other_topics = set()
+                            for t in topics:
+                                if t in all_topics and t != topic:
+                                    other_topics.add(t)
+                            text = hg.get_str_attribute(edge, 'text')
+                            conflict_data = {'text': text,
+                                             'other_topics': other_topics}
+                            conflicts[(actor1, actor2)].append(conflict_data)
     return conflicts
