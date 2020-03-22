@@ -62,7 +62,7 @@ def conflicts_topic():
             for topic in conflict_data['other_topics']:
                 other_topics.add(topic)
 
-        other_topics = [{'label': t.to_str(),
+        other_topics = [{'label': t.label(),
                          'url': topic_url(t)} for t in other_topics]
 
         info = {'headlines': headlines,
