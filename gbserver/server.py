@@ -40,6 +40,7 @@ def conflicts_topic():
 
     graph = {'type': 'graph',
              'layout': 'force-directed',
+             'topic_label': topic.label(),
              'nodes': [],
              'links': []}
     data = {'viz_blocks': [graph]}
